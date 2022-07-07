@@ -40,15 +40,11 @@
 
 ![](https://img-blog.csdnimg.cn/a35e561883294adcaf10a9210a1a45b3.png)​
 
-图1 数据集文件
-
-![]("点击并拖拽以移动")编辑
+<center>图1 数据集文件</center>
 
 ![](https://img-blog.csdnimg.cn/090fb82715d94b30a0186df3306b5a2f.png)​
 
-图2 （train文件夹）训练集
-
-![]("点击并拖拽以移动")编辑
+<center>图2 （train文件夹）训练集</center>
 
 * 训练集中共有数据918条，音频格式为wav，数据长度5s~30s不等。
 
@@ -69,35 +65,25 @@
 
 ![](https://img-blog.csdnimg.cn/img_convert/78f2ba88de712f2d2456be19bbb859ac.jpeg)​
 
-![]("点击并拖拽以移动")编辑
-
 查找资料发现，音频实际是以波的形式存在，若以时间为横轴、振幅为纵轴绘制图像，则如图3所示。
 
 ![](https://img-blog.csdnimg.cn/e2bbd15c0ca440aca680679c2fdffc5a.png)​
 
-图3 波形图
-
-![]("点击并拖拽以移动")编辑
+<center>图3 波形图</center>
 
 通过查看原始音频文件数据存储发现，虽然音频文件同样可表现为张量数据（如图4所示），但在深度学习方面通常不会将其直接放入网络，通常的做法是将音频转换为频谱图（如图5所示）。频谱图是音频波的简洁“快照”，因为它是图像，所以非常适合输入到为处理图像而开发的基于CNN的架构中。图6展示了音频深度学习流程图。
 
 ![](https://img-blog.csdnimg.cn/img_convert/a10ff0e75e3db561c24321e52f81a42a.png)​
 
-图4 音频文件
-
-![]("点击并拖拽以移动")编辑
+<center>图4 音频文件</center>
 
 ![](https://img-blog.csdnimg.cn/5a82fd63e81447cf913300c42c9fc6b7.png)​
 
-图5 频谱图（spectrogram）
-
-![]("点击并拖拽以移动")编辑
+<center>图5 频谱图（spectrogram）</center>
 
 ![](https://img-blog.csdnimg.cn/img_convert/ba40188817ef0f6c2070513f53b16cfe.png)​
 
-图6 音频深度学习流程图
-
-![]("点击并拖拽以移动")编辑
+<center>图6 音频深度学习流程图</center>
 
 ## 3.深度学习网络结构
 
@@ -119,15 +105,14 @@ Babysound是一类包含6类声音的数据集，包括饿了、想睡觉等声�
 
 ![](https://img-blog.csdnimg.cn/2b17795c1bbf496d8d703ddff3c582de.png)​
 
-图7 原始婴儿哭声音频
 
-![]("点击并拖拽以移动")编辑
+<center>图7 原始婴儿哭声音频</center>
 
 ![](https://img-blog.csdnimg.cn/9e42e5d05881413baae15e614c33cd11.png)​
 
-图8 分割之后的婴儿哭声音频数据
 
-![]("点击并拖拽以移动")编辑
+
+<center>图8 分割之后的婴儿哭声音频数据</center>
 
 * 关于婴儿哭声数据集的测试集
 
@@ -141,33 +126,33 @@ Babysound是一类包含6类声音的数据集，包括饿了、想睡觉等声�
 
 ![](https://img-blog.csdnimg.cn/99241ae66fbc4105948f157ea31ed607.png)​
 
-图9 DNN网络结构
 
-![]("点击并拖拽以移动")编辑
+
+<center>图9 DNN网络结构</center>
 
 * Urbansound数据集在该网络中的表现如图10所示；
 
 ![](https://img-blog.csdnimg.cn/df9b51ac4c5748b0815e1ef9d2c2f00e.png)​
 
-图10 Urbansound数据集在DNN网络中的表现
 
-![]("点击并拖拽以移动")编辑
+
+<center>图10 Urbansound数据集在DNN网络中的表现</center>
 
 * 图11为Babysound数据集在该网络中的表现；
 
 ![](https://img-blog.csdnimg.cn/a41ee34798b148de87dddfef0a8d0e7f.png)​
 
-图11 Babysound数据集在DNN网络中的表现
 
-![]("点击并拖拽以移动")编辑
+
+<center>图11 Babysound数据集在DNN网络中的表现</center>
 
 * 图12为该模型在Babysound测试集上的准确率（0.8163265306122449）。
 
 ![](https://img-blog.csdnimg.cn/dabad947539f4b8e9126464747dd6073.png)​
 
-图12 婴儿哭声测试集在该模型上的准确率
 
-![]("点击并拖拽以移动")编辑
+
+<center>图12 婴儿哭声测试集在该模型上的准确率</center>
 
 ## 2. DNN+CNN
 
@@ -175,49 +160,47 @@ Babysound是一类包含6类声音的数据集，包括饿了、想睡觉等声�
 
 ![](https://img-blog.csdnimg.cn/fb7c2562df7a45339c36e4eb64827358.png)​
 
-图13 CNN卷积神经网络结构
 
-![]("点击并拖拽以移动")编辑
+
+<center>图13 CNN卷积神经网络结构</center>
 
 * Urbansound数据在CNN网络中的表现如图14所示；
 
 ![](https://img-blog.csdnimg.cn/a0987d0f8c344c2cac870e1f78ef909e.png)​
 
-图14 Urbansound数据在CNN网络中的表现
-
-![]("点击并拖拽以移动")编辑
+<center>图14 Urbansound数据在CNN网络中的表现</center>
 
 * Babysound数据在CNN网络中的表现如图15所示；
 
 ![](https://img-blog.csdnimg.cn/1d285e4f40314fd692c0dcea82535681.png)​
 
-图15 Babysound数据在CNN网络中的表现
 
-![]("点击并拖拽以移动")编辑
+
+<center>图15 Babysound数据在CNN网络中的表现</center>
 
 * CNN网络模型在Babysound测试上的准确率（0.9081632653061225）如图16所示；
 
 ![](https://img-blog.csdnimg.cn/f99582e9a9964ddb95484b42e0bade74.png)​
 
-图16 Babysound测试集在CNN网络模型中的准确率
 
-![]("点击并拖拽以移动")编辑
+
+<center>图16 Babysound测试集在CNN网络模型中的准确率</center>
 
 * 在此网络结构下，通过迁移学习Urbansound数据集训练的模型，Babysound数据在此网络结构下的表现如图17所示；
 
 ![](https://img-blog.csdnimg.cn/61e242d3dd6c4638a54955e8d1f6ec0c.png)​
 
-图17 Babysound数据在迁移学习Urbansound数据模型的表现
 
-![]("点击并拖拽以移动")编辑
+
+<center>图17 Babysound数据在迁移学习Urbansound数据模型的表现</center>
 
 * 迁移学习Urbansound模型在Babysound测试集上的准确率（0.9931972789115646）如图18所示。
 
 ![](https://img-blog.csdnimg.cn/f0e9e86250064546bf872514050ef91e.png)​
 
-图18 Babysound测试集在迁移学习Urbansound模型上的准确率
 
-![]("点击并拖拽以移动")编辑
+
+<center>图18 Babysound测试集在迁移学习Urbansound模型上的准确率</center>
 
 ## 3. 迁移学习Vggish模型
 
@@ -225,43 +208,45 @@ Babysound是一类包含6类声音的数据集，包括饿了、想睡觉等声�
 
 ![](https://img-blog.csdnimg.cn/8029132817784a308469100fb98e1ae4.png)​
 
-图19 vggish网络结构
 
-![]("点击并拖拽以移动")编辑
+
+<center>图19 vggish网络结构</center>
 
 在迁移学习vggish模型的基础上，实验在网络后添加长短时记忆网络(Long Short Term Memory Network, [LSTM](https://so.csdn.net/so/search?q=LSTM&spm=1001.2101.3001.7020 "LSTM"))和一个全连接，最终将婴儿哭声数据分成6类，网络结构如图20所示。
 
 ![](https://img-blog.csdnimg.cn/84af8d4152e2441399ffcc5e94c3034b.png)​
 
-图20 在vggish网络后添加短时记忆网络并添加一层全连接
 
-![]("点击并拖拽以移动")编辑
+
+<center>图20 在vggish网络后添加短时记忆网络并添加一层全连接</center>
 
 图21展示了实验相关参数和实验结果；
 
 ![](https://img-blog.csdnimg.cn/c66d722e1c9a49c3ae45f5d691d248c8.png)​
 
-图21 Babysound数据在迁移学习vggish网络模型上的表现
 
-![]("点击并拖拽以移动")编辑
+
+<center>图21 Babysound数据在迁移学习vggish网络模型上的表现</center>
 
 图22为vggish迁移模型在Babysound测试集上的准确率（0.8639455782312925）。
 
 ![](https://img-blog.csdnimg.cn/010a074d8acf4bc3acfdd67d13358223.png)​
 
-图22 Babysound测试集在迁移学习vggish模型上的准确率
 
-![]("点击并拖拽以移动")编辑
+
+<center>图22 Babysound测试集在迁移学习vggish模型上的准确率</center>
 
 ## 4.实验结果汇总
 
-表1 各模型在Babysound测试集中的准确率| 深度网络                                | 在Babysound测试集中的准确率 |
-| ----------------------------------------- | ----------------------------- |
-| DNN网络模型                             | 0.8163265306122449 |
-| 迁移学习Urbansound的DNN网络模型         | 0.5578231292517006 |
-| CNN网络模型                             | 0.9081632653061225 |
+<center>表1 各模型在Babysound测试集中的准确率</center>
+
+| 深度网络                                                                | 在Babysound测试集中的准确率 |
+| -----------------------------------------                             | -------------------------------------------- |
+| DNN网络模型                                                        | 0.8163265306122449 |
+| 迁移学习Urbansound的DNN网络模型              | 0.5578231292517006 |
+| CNN网络模型                                                        | 0.9081632653061225 |
 | 迁移学习Urbansound数据集的CNN网络模型   | **0.9931972789115646** |
-| 迁移学习vggish模型                      | 0.8639455782312925 |
+| 迁移学习vggish模型                                              | 0.8639455782312925 |
 
 ---
 
@@ -277,15 +262,15 @@ Babysound是一类包含6类声音的数据集，包括饿了、想睡觉等声�
 
 ![](https://img-blog.csdnimg.cn/6cc0f1a3f6734aa08a34132b3e85afe0.png)​
 
-图23 完整的项目结构图
 
-![]("点击并拖拽以移动")编辑
+
+<center>图23 完整的项目结构图</center>
 
 ![](https://img-blog.csdnimg.cn/32fba5ddccd349e9a077b90159a5aa6d.png)​
 
-图24 婴儿啼哭小程序
 
-![]("点击并拖拽以移动")编辑
+
+<center>图24 婴儿啼哭小程序</center>
 
 # 六、后记
 
