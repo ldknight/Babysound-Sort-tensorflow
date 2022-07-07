@@ -40,7 +40,7 @@
 
 ![](https://img-blog.csdnimg.cn/a35e561883294adcaf10a9210a1a45b3.png)​
 
-<center>图1 数据集文件</center>
+<p align="center">图1 数据集文件</p>
 
 ![](https://img-blog.csdnimg.cn/090fb82715d94b30a0186df3306b5a2f.png)​
 
